@@ -1,12 +1,29 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+
 import reportWebVitals from './reportWebVitals';
+
+import './index.css';
+import Header from './layout/Header.js';
+
+import Home from './pages/Home';
+import Error from './pages/Error.js';
+import APropos from './pages/APropos.js';
+
+// react router : cannot use Switch from v5 : replaced by Routes in v6
+// https://reacttraining.com/blog/react-router-v6-pre/
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Router>
+      <Header />
+      <Routes>
+       <Route path="/" element={<Home />} />
+       <Route path="/apropos" element={<APropos />} />
+       <Route path="*" element={<Error />} />
+      </Routes>
+    </Router>
   </React.StrictMode>,
   document.getElementById('root')
 );

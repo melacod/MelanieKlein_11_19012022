@@ -1,0 +1,21 @@
+nav ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    list-style: none;
+}
+
+nav ul li {
+    display: block;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 24px;
+    text-align: right;
+    color: var(--main-color);
+    margin-left: 50px;
+}
+
+nav ul li a.active {
+    text-decoration: underline;
+}
