@@ -1,0 +1,70 @@
+.collapse {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.collapse .title {
+    width: 100%;
+    background-color: var(--main-color);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.collapse .title .text {
+    color: white;
+    font-size: 24px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.collapse .title .icon {
+    margin-right: 10px;
+}
+
+.collapse .content {
+    width: 100%;
+    color: var(--main-color);
+    background-color: var(--bg-color);
+    font-size: 24px;
+    font-weight: 400;
+    font-style: normal;
+    padding: 30px 20px 20px 20px;
+}
+
+.collapse .content.expanded {
+    display: block;
+}
+
+.collapse .content.collapsed {
+    display: none;
+}
+
+.collapse .arrow path {
+    fill: white;
+}
+
+@media (max-width: 375px) {
+
+    .collapse .title .text {
+        font-size: 13px;
+    }
+
+    .collapse .arrow {
+        height: 18px;
+        width: 18px;
+    }
+
+    .collapse .content {
+        font-size: 12px;
+        padding: 10px 7px 7px 7px;
+    }
+
+}

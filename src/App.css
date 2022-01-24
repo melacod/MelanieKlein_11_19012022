@@ -1,5 +1,6 @@
 html {
   --main-color: #FF6060;
+  --bg-color: #F6F6F6;
 }
 
 body {
@@ -33,6 +34,15 @@ a {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
+}
+
+@media (max-width: 375px) {
+
+  main {
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
 }
