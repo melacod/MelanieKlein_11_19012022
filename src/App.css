@@ -20,7 +20,7 @@ a {
   text-decoration: none;
 }
 
-#root {
+.app {
   max-width: 1240px;
   position: relative;
   left: 50%;

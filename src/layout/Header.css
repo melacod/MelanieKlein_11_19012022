@@ -11,3 +11,15 @@ header {
 .logo {
     display: block;
 }
+
+@media (max-width: 375px) {
+
+    header {
+        margin: 20px;
+    }
+
+    .logo {
+        width: 145px;
+    }
+    
+}
