@@ -1,11 +1,13 @@
-import logo from '../assets/logo.svg';
-import "./Header.css";
 import Navigation from "./Navigation.js";
+
+import { ReactComponent as Logo } from '../assets/logo.svg';
+
+import "./Header.css";
 
 export default function Header() {
     return (
         <header>
-            <img src={logo} alt='K@sa' className='logo' />
+            <Logo fill="#FF6060" className='logo' />
             <Navigation />
         </header>
     )

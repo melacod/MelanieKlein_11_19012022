@@ -8,7 +8,7 @@ header {
     margin-bottom: 20px;
 }
 
-.logo {
+header .logo {
     display: block;
 }
 
@@ -18,7 +18,7 @@ header {
         margin: 20px;
     }
 
-    .logo {
+    header .logo {
         width: 145px;
     }
     
