@@ -1,48 +1,47 @@
 html {
-  --main-color: #FF6060;
-  --bg-color: #F6F6F6;
+    --main-color: #ff6060;
+    --bg-color: #f6f6f6;
 }
 
 body {
-  margin: 0;
-  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    margin: 0;
+    font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans',
+        'Helvetica Neue', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+        monospace;
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 .app {
-  max-width: 1240px;
-  position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+    max-width: 1240px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
 
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  min-height: 100vh;
-  margin: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+    margin: 0;
 }
 
 @media (max-width: 375px) {
-
-  main {
-      margin-left: 20px;
-      margin-right: 20px;
-  }
-
+    main {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
 }

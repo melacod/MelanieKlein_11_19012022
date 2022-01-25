@@ -21,11 +21,9 @@ nav ul li a.active {
 }
 
 @media (max-width: 375px) {
-
     nav ul li {
         font-size: 12px;
         margin-left: 10px;
         text-transform: uppercase;
     }
-    
 }

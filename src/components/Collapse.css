@@ -52,7 +52,6 @@
 }
 
 @media (max-width: 375px) {
-
     .collapse .title .text {
         font-size: 13px;
     }
@@ -66,5 +65,4 @@
         font-size: 12px;
         padding: 10px 7px 7px 7px;
     }
-
 }

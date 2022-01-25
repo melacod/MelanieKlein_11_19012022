@@ -1,18 +1,17 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 
-import Header from './layout/Header.js';
-import Footer from './layout/Footer.js';
+import Header from './layout/Header.js'
+import Footer from './layout/Footer.js'
 
-import Home from './pages/Home';
-import Error from './pages/Error.js';
-import APropos from './pages/APropos.js';
+import Home from './pages/Home'
+import Error from './pages/Error.js'
+import APropos from './pages/APropos.js'
 
-import './App.css';
+import './App.css'
 
-export default function App () {
-
+export default function App() {
     return (
-        <div className='app'>
+        <div className="app">
             <Router>
                 <Header />
                 <main>
@@ -25,6 +24,5 @@ export default function App () {
                 <Footer />
             </Router>
         </div>
-    );
-
+    )
 }
