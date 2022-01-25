@@ -1,4 +1,8 @@
 .collapse {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
