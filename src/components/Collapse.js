@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import PropTypes from 'prop-types'
 
 import { ReactComponent as ArrowDown } from '../assets/arrow-down.svg'
 import { ReactComponent as ArrowUp } from '../assets/arrow-up.svg'
@@ -25,4 +26,9 @@ export default function Collapse({ title, content }) {
             </div>
         </div>
     )
+}
+
+Collapse.propTypes = {
+    title: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
 }
