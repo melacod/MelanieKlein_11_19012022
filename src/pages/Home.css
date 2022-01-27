@@ -32,3 +32,23 @@
     width: 100%;
     text-align: center;
 }
+
+@media (max-width: 375px) {
+    .home {
+        margin-top: 0;
+    }
+
+    .home .top {
+        height: 111px;
+    }
+
+    .home .top img {
+        border-radius: 10px;
+    }
+
+    .home .top div {
+        font-size: 24px;
+        width: 65%;
+        text-align: left;
+    }
+}

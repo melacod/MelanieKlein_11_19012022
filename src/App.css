@@ -28,7 +28,9 @@ a {
 }
 
 .app {
-    max-width: 1240px;
+    max-width: 1260px;
+    padding-left: 10px;
+    padding-right: 10px;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -41,6 +43,9 @@ a {
 }
 
 @media (max-width: 375px) {
+    .app {
+        padding: 0;
+    }
     main {
         margin-left: 20px;
         margin-right: 20px;
