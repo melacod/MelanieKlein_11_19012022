@@ -1,0 +1,7 @@
+.thumbs-container {
+    background-color: var(--bg-color);
+    padding-top: 56px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 56px;
+}

@@ -1,1 +1,34 @@
+.home {
+    margin-top: 43px;
+}
 
+.home .top {
+    position: relative;
+    width: 100%;
+    height: 233px;
+}
+
+.home .top img {
+    position: absolute;
+    display: block;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    height: inherit;
+    width: inherit;
+    filter: contrast(50%);
+}
+
+.home .top div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    color: var(--second-color);
+    width: 100%;
+    text-align: center;
+}
