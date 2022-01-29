@@ -1,11 +1,12 @@
 import Collapse from '../components/Collapse.js'
 
-import imageTop from '../assets/top-apropos.jpg'
-import './APropos.css'
+import imageTop from '../assets/top-about.jpg'
 
-export default function APropos() {
+import './About.css'
+
+export default function About() {
     return (
-        <div className="apropos">
+        <div className="about">
             <img src={imageTop} alt="Beautiful landscape" />
 
             <Collapse

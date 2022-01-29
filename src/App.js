@@ -5,7 +5,7 @@ import Footer from './layout/Footer.js'
 
 import Home from './pages/Home'
 import Error from './pages/Error.js'
-import APropos from './pages/APropos.js'
+import About from './pages/About.js'
 
 import './App.css'
 
@@ -17,7 +17,7 @@ export default function App() {
                 <main>
                     <Routes>
                         <Route path="/" element={<Home />} />
-                        <Route path="/apropos" element={<APropos />} />
+                        <Route path="/about" element={<About />} />
                         <Route path="*" element={<Error />} />
                     </Routes>
                 </main>

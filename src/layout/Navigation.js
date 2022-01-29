@@ -10,7 +10,7 @@ export default function Navigation() {
                     <NavLink to="/">Accueil</NavLink>
                 </li>
                 <li>
-                    <NavLink to="/apropos">A Propros</NavLink>
+                    <NavLink to="/about">A Propros</NavLink>
                 </li>
             </ul>
         </nav>
