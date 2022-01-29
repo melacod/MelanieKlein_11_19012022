@@ -7,7 +7,7 @@ import Thumb from './Thumb.js'
 import './ThumbsContainer.css'
 
 export default function ThumbsContainer() {
-    const { loading, data, error, exception } = useFetch('data/logements.json')
+    const { loading, data, error, exception } = useFetch('data/locations.json')
 
     return (
         <div className="thumbs-container">
