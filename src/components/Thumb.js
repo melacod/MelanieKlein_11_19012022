@@ -1,10 +1,10 @@
 import './Thumb.css'
 
-export default function Thumb({ logement }) {
+export default function Thumb({ location }) {
     return (
         <div className="thumb">
-            <img src={logement.cover} alt={logement.title} />
-            <div>{logement.title}</div>
+            <img src={location.cover} alt={location.title} />
+            <div>{location.title}</div>
         </div>
     )
 }

@@ -23,8 +23,7 @@ export default function Home() {
                 ) : loading ? (
                     <Loader />
                 ) : (
-                    data.map((logement) => (
-                        <Thumb key={logement.id} logement={logement} />
+                        <Thumb key={location.id} location={location} />
                     ))
                 )}
             </div>
