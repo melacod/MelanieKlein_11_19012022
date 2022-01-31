@@ -1,7 +1,6 @@
 import { useFetch } from '../utils/hooks.js'
 
-import imageTop from '../assets/top-home.jpg'
-
+import Banner from '../components/Banner.js'
 import Error from '../components/Error.js'
 import Loader from '../components/Loader.js'
 import Thumb from '../components/Thumb.js'
@@ -14,7 +13,7 @@ export default function Home() {
     return (
         <div className="home">
             <div className="top">
-                <img src={imageTop} alt="Beautiful landscape" />
+                <Banner src="banner/banner-home.jpg" />
                 <div>Chez vous, partout et ailleurs</div>
             </div>
             <div className="thumbs-container">
@@ -23,6 +22,7 @@ export default function Home() {
                 ) : loading ? (
                     <Loader />
                 ) : (
+                    data.map((location) => (
                         <Thumb key={location.id} location={location} />
                     ))
                 )}

@@ -1,0 +1,15 @@
+img.banner {
+    display: block;
+    height: 233px;
+    object-fit: cover;
+    margin-bottom: 30px;
+    border-radius: 25px;
+    filter: contrast(50%);
+}
+
+@media (max-width: 375px) {
+    img.banner {
+        margin-bottom: 20px;
+        border-radius: 10px;
+    }
+}

@@ -10,13 +10,8 @@
 
 .home .top img {
     position: absolute;
-    display: block;
-    object-fit: cover;
-    margin-bottom: 30px;
-    border-radius: 25px;
     height: inherit;
     width: inherit;
-    filter: contrast(50%);
 }
 
 .home .top div {
@@ -56,10 +51,6 @@
 
     .home .top {
         height: 111px;
-    }
-
-    .home .top img {
-        border-radius: 10px;
     }
 
     .home .top div {
