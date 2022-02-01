@@ -6,6 +6,7 @@ import Footer from './layout/Footer.js'
 import Home from './pages/Home'
 import Error from './pages/Error.js'
 import About from './pages/About.js'
+import Location from './pages/Location.js'
 
 export default function AppRouter() {
     return (
@@ -15,6 +16,10 @@ export default function AppRouter() {
                 <Routes>
                     <Route path="/" element={<Home />} />
                     <Route path="/about" element={<About />} />
+                    <Route
+                        path="/location/:locationId"
+                        element={<Location />}
+                    />
                     <Route path="*" element={<Error />} />
                 </Routes>
             </main>
