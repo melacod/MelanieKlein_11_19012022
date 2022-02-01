@@ -1,4 +1,4 @@
-import { useFetch } from '../utils/hooks.js'
+import { GetAllLocations } from '../provider/LocationProvider.js'
 
 import Banner from '../components/Banner.js'
 import Error from '../components/Error.js'
@@ -8,7 +8,7 @@ import Thumb from '../components/Thumb.js'
 import './Home.css'
 
 export default function Home() {
-    const { loading, data, error, exception } = useFetch('data/locations.json')
+    const { loading, data, error, exception } = GetAllLocations()
 
     return (
         <div className="home">
