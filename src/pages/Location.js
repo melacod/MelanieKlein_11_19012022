@@ -9,6 +9,7 @@ import Tag from '../components/Tag'
 import Rating from '../components/Rating'
 
 import './Location.css'
+import Collapse from '../components/Collapse'
 
 export default function Location() {
     const { locationId } = useParams()
@@ -51,6 +52,18 @@ export default function Location() {
                             </div>
                             <Rating score={parseInt(location.rating)} />
                         </div>
+                    </div>
+                    <div className="description">
+                        <Collapse title="Description">
+                            <span>{location.description}</span>
+                        </Collapse>
+                        <Collapse title="Équipements">
+                            <ul>
+                                {location.equipments.map( (equipment, index) => (
+                                    <li key={"equipment-" + index}>{equipment}</li>
+                                ))}
+                            </ul>
+                        </Collapse>
                     </div>
                 </div>
             )}

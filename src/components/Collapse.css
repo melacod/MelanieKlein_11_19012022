@@ -1,8 +1,4 @@
 .collapse {
-    position: relative;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -18,7 +14,6 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    border-radius: 5px;
     cursor: pointer;
 }
 
@@ -49,10 +44,6 @@
 
 .collapse .content.collapsed {
     display: none;
-}
-
-.collapse .arrow path {
-    fill: var(--second-color);
 }
 
 @media (max-width: 375px) {

@@ -14,9 +14,9 @@ export default function Collapse({ title, children }) {
                 <div className="text">{title}</div>
                 <div className="icon">
                     {isExpanded ? (
-                        <ArrowUp />
+                        <ArrowUp color="white" />
                     ) : (
-                        <ArrowDown />
+                        <ArrowDown color='white' />
                     )}
                 </div>
             </div>
