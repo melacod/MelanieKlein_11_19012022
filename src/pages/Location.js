@@ -27,12 +27,12 @@ export default function Location() {
                 <Error exception={exception} />
             ) : loading ? (
                 <Loader />
-            ) : location ? (
+            ) : !location ? (
+                navigate('/error')
+            ) : (
                 <h1>
                     Loaded {location.id} - {location.title}
                 </h1>
-            ) : (
-                navigate('/error')
             )}
         </div>
     )
