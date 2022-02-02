@@ -48,7 +48,12 @@ export default function Location() {
                         <div className="right">
                             <div className="host">
                                 <div className="name">{location.host.name}</div>
-                                <div className="picture"><img src={location.host.picture} alt={location.host.name} /></div>
+                                <div className="picture">
+                                    <img
+                                        src={location.host.picture}
+                                        alt={location.host.name}
+                                    />
+                                </div>
                             </div>
                             <Rating score={parseInt(location.rating)} />
                         </div>
@@ -59,8 +64,10 @@ export default function Location() {
                         </Collapse>
                         <Collapse title="Équipements">
                             <ul>
-                                {location.equipments.map( (equipment, index) => (
-                                    <li key={"equipment-" + index}>{equipment}</li>
+                                {location.equipments.map((equipment, index) => (
+                                    <li key={'equipment-' + index}>
+                                        {equipment}
+                                    </li>
                                 ))}
                             </ul>
                         </Collapse>
