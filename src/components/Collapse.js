@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
-import { ReactComponent as ArrowDown } from '../assets/arrow-down.svg'
-import { ReactComponent as ArrowUp } from '../assets/arrow-up.svg'
+import ArrowDown from '../assets/ArrowDown'
+import ArrowUp from '../assets/ArrowUp'
 
 import './Collapse.css'
 
@@ -14,9 +14,9 @@ export default function Collapse({ title, children }) {
                 <div className="text">{title}</div>
                 <div className="icon">
                     {isExpanded ? (
-                        <ArrowUp className="arrow" />
+                        <ArrowUp />
                     ) : (
-                        <ArrowDown className="arrow" />
+                        <ArrowDown />
                     )}
                 </div>
             </div>
