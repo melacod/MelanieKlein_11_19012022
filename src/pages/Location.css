@@ -44,3 +44,27 @@
 .location .tags .tag {
     margin-right: 10px;
 }
+
+.location .host {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.location .host .name {
+    color: var(--main-color);
+    font-weight: 500;
+    font-style: normal;
+    font-size: 18px;
+    width: 100px;
+    text-align: right;
+    margin-right: 10px;
+    height: 64px;
+    line-height: 32px;
+}
+
+.location .host .picture img {
+    height: 64px;
+    width: 64px;
+    border-radius: 50%;
+}

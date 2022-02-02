@@ -51,7 +51,8 @@ export default function Location() {
                         </div>
                         <div className="right">
                             <div className="host">
-                                todo host {location.host.name}
+                                <div className="name">{location.host.name}</div>
+                                <div className="picture"><img src={location.host.picture} /></div>
                             </div>
                             <div className="rating">
                                 todo rating: {location.rating}
