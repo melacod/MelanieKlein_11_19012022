@@ -22,12 +22,6 @@ export default function Location() {
         }
     }, [data, locationId])
 
-    /*
-    location.tags.map((tagName) => (
-        <Tag key={tagName} name={tagName} />
-    ))
-    */
-
     return (
         <div>
             {error ? (
@@ -44,15 +38,15 @@ export default function Location() {
                             <div className="title">{location.title}</div>
                             <div className="city">{location.location}</div>
                             <div className="tags">
-                                {location.tags.map((t) => (
-                                    <Tag name={t} />
+                                {location.tags.map((t, index) => (
+                                    <Tag key={index + t} name={t} />
                                 ))}
                             </div>
                         </div>
                         <div className="right">
                             <div className="host">
                                 <div className="name">{location.host.name}</div>
-                                <div className="picture"><img src={location.host.picture} /></div>
+                                <div className="picture"><img src={location.host.picture} alt={location.host.name} /></div>
                             </div>
                             <div className="rating">
                                 todo rating: {location.rating}
