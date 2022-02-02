@@ -1,0 +1,12 @@
+.tag {
+    height: 25px;
+    line-height: 25px;
+    width: 115px;
+    border-radius: 10px;
+    background-color: var(--main-color);
+    color: #ffffff;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 14px;
+    text-align: center;
+}
