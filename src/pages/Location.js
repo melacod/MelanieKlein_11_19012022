@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { useParams } from 'react-router'
+import { useParams, useNavigate } from 'react-router'
 
 import { GetAllLocations } from '../provider/LocationProvider'
 
@@ -12,11 +12,12 @@ export default function Location() {
     const { locationId } = useParams()
     const { loading, data, error, exception } = GetAllLocations()
 
-    const [ location, setLocation ] = useState({})
+    const [location, setLocation] = useState({})
+    const navigate = useNavigate()
 
     useEffect(() => {
         if (data && Array.isArray(data)) {
-            setLocation(data.find(l => l.id === locationId))
+            setLocation(data.find((l) => l.id === locationId))
         }
     }, [data, locationId])
 
@@ -26,8 +27,12 @@ export default function Location() {
                 <Error exception={exception} />
             ) : loading ? (
                 <Loader />
+            ) : location ? (
+                <h1>
+                    Loaded {location.id} - {location.title}
+                </h1>
             ) : (
-                <h1>Loaded {location.id} - {location.title}</h1>
+                navigate('/error')
             )}
         </div>
     )
