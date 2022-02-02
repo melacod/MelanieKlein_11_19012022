@@ -5,9 +5,10 @@ import { GetAllLocations } from '../provider/LocationProvider'
 
 import Error from '../components/Error'
 import Loader from '../components/Loader'
+import Tag from '../components/Tag'
+import Rating from '../components/Rating'
 
 import './Location.css'
-import Tag from '../components/Tag'
 
 export default function Location() {
     const { locationId } = useParams()
@@ -48,9 +49,7 @@ export default function Location() {
                                 <div className="name">{location.host.name}</div>
                                 <div className="picture"><img src={location.host.picture} alt={location.host.name} /></div>
                             </div>
-                            <div className="rating">
-                                todo rating: {location.rating}
-                            </div>
+                            <Rating score={parseInt(location.rating)} />
                         </div>
                     </div>
                 </div>

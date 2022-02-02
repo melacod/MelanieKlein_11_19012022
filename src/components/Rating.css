@@ -1,0 +1,7 @@
+.rating {
+    display: block;
+}
+
+.rating .star {
+    margin-left: 10px;
+}

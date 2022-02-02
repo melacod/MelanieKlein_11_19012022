@@ -49,6 +49,8 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .location .host .name {
@@ -59,8 +61,6 @@
     width: 100px;
     text-align: right;
     margin-right: 10px;
-    height: 64px;
-    line-height: 32px;
 }
 
 .location .host .picture img {
