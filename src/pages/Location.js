@@ -8,9 +8,9 @@ import Loader from '../components/Loader'
 import Tag from '../components/Tag'
 import Rating from '../components/Rating'
 import Collapse from '../components/Collapse'
+import AnimatedGallery from '../components/AnimatedGallery'
 
 import './Location.css'
-import Gallery from '../components/Gallery'
 
 export default function Location() {
     const { locationId } = useParams()
@@ -35,7 +35,7 @@ export default function Location() {
                 navigate('/error')
             ) : (
                 <div className="location">
-                    <Gallery pictures={location.pictures} />
+                    <AnimatedGallery pictures={location.pictures} />
                     <div className="info">
                         <div className="left">
                             <div className="title">{location.title}</div>
