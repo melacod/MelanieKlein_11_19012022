@@ -10,6 +10,7 @@ import Rating from '../components/Rating'
 import Collapse from '../components/Collapse'
 
 import './Location.css'
+import Gallery from '../components/Gallery'
 
 export default function Location() {
     const { locationId } = useParams()
@@ -34,7 +35,7 @@ export default function Location() {
                 navigate('/error')
             ) : (
                 <div className="location">
-                    <div className="gallery">todo gallery</div>
+                    <Gallery pictures={location.pictures} />
                     <div className="info">
                         <div className="left">
                             <div className="title">{location.title}</div>
