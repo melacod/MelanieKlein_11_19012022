@@ -7,9 +7,9 @@ import Error from '../components/Error'
 import Loader from '../components/Loader'
 import Tag from '../components/Tag'
 import Rating from '../components/Rating'
+import Collapse from '../components/Collapse'
 
 import './Location.css'
-import Collapse from '../components/Collapse'
 
 export default function Location() {
     const { locationId } = useParams()
