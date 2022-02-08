@@ -8,7 +8,7 @@ import Loader from '../components/Loader'
 import Tag from '../components/Tag'
 import Rating from '../components/Rating'
 import Collapse from '../components/Collapse'
-import AnimatedGallery from '../components/AnimatedGallery'
+import Gallery from '../components/Gallery'
 
 import './Location.css'
 
@@ -35,7 +35,7 @@ export default function Location() {
                 navigate('/error')
             ) : (
                 <div className="location">
-                    <AnimatedGallery pictures={location.pictures} />
+                    <Gallery pictures={location.pictures} />
                     <div className="info">
                         <div className="left">
                             <div className="title">{location.title}</div>
