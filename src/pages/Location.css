@@ -88,3 +88,65 @@
 .location .description .collapse .content {
     height: 250px;
 }
+
+@media (max-width: 375px) {
+    .location .info {
+        margin-top: 15px;
+        flex-wrap: wrap;
+    }
+
+    .location .info .title {
+        font-size: 18px;
+    }
+
+    .location .city {
+        font-size: 14px;
+    }
+
+    .location .tags {
+        margin-top: 10px;
+    }
+
+    .location .right {
+        display: flex;
+        flex-wrap: nowrap;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-top: 16px;
+    }
+
+    .location .host {
+        align-self: flex-end;
+    }
+
+    .location .host .name {
+        font-size: 12px;
+    }
+
+    .location .host .picture img {
+        height: 32px;
+        width: 32px;
+        border-radius: 50%;
+    }
+
+    .location .description {
+        margin-top: 20px;
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .location .description .collapse {
+        width: 100%;
+    }
+
+    .location .description .collapse .title {
+        border-radius: 5px;
+        line-height: 1;
+    }
+
+    .location .description .collapse .content {
+        height: auto;
+    }
+}
