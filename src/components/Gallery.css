@@ -26,7 +26,7 @@
     opacity: 1;
 }
 
-@keyframes moveLeft {
+@keyframes disappear {
     from {
         opacity: 1;
     }
@@ -37,13 +37,13 @@
 
 .gallery .picture img.hidden {
     z-index: 50;
-    animation-name: moveLeft;
+    animation-name: disappear;
     animation-duration: 0.8s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 
-@keyframes moveRight {
+@keyframes appear {
     from {
         opacity: 0;
     }
@@ -53,7 +53,7 @@
 }
 
 .gallery .picture.animated img.show {
-    animation-name: moveRight;
+    animation-name: appear;
     animation-duration: 0.8s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
@@ -61,34 +61,59 @@
 
 .gallery .arrow {
     cursor: pointer;
+    width: 48px;
+    height: 80px;
 }
 
-.gallery .previous {
-    position: absolute;
-    z-index: 200;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-    margin-left: 20px;
-    border-radius: 0 3px 3px 0;
-    border-radius: 10px;
-    transition: 0.6s ease;
-    padding: 16px;
-}
-
+.gallery .previous,
 .gallery .next {
     position: absolute;
     z-index: 200;
-    right: 0;
     top: 50%;
     transform: translateY(-50%);
-    margin-right: 20px;
     border-radius: 10px;
     transition: 0.6s ease;
     padding: 16px;
+}
+
+.gallery .previous {
+    left: 0;
+    margin-left: 20px;
+}
+
+.gallery .next {
+    right: 0;
+    margin-right: 20px;
 }
 
 .gallery .previous:hover,
 .gallery .next:hover {
-  background-color: rgba(255, 96, 96, 0.8);
+    background-color: rgba(255, 96, 96, 0.8);
+}
+
+@media (max-width: 375px) {
+    .gallery {
+        height: 255px;
+    }
+
+    .gallery .picture img {
+        border-radius: 10px;
+    }
+
+    .gallery .arrow {
+        transform: scale(0.25);
+    }
+
+    .gallery .previous,
+    .gallery .next {
+        padding: 0;
+    }
+
+    .gallery .previous {
+        margin-left: 5px;
+    }
+
+    .gallery .next {
+        margin-right: 5px;
+    }
 }
