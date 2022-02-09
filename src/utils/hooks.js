@@ -15,8 +15,8 @@ export function useFetch(url) {
         async function fetchData() {
             try {
                 // Uncomment to simulate a sleep of N seconds => loader being displayed
-                // await new Promise((r) => setTimeout(r, 5 * 1000))
-                const response = await fetch(url) 
+                await new Promise((r) => setTimeout(r, 2 * 1000))
+                const response = await fetch(url)
                 const receivedData = await response.json()
                 setData(receivedData)
             } catch (err) {
