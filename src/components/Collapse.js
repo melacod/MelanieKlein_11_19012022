@@ -5,7 +5,11 @@ import ArrowUp from '../assets/ArrowUp'
 
 import './Collapse.css'
 
+// Composant permettant d'afficher/de masquer un ensemble d'éléments
+// Ce composant comporte une barre de titre et une zone contenant les enfants de ce composant
+// Lorsqu'on clique sur le titre, la zone contenant les enfants est affichée/masquée alternativement
 export default function Collapse({ title, children }) {
+    // Cet état indique si la zone contenant les enfants est affichée/masquée
     const [isExpanded, setExpanded] = useState(false)
 
     return (
@@ -16,7 +20,7 @@ export default function Collapse({ title, children }) {
                     {isExpanded ? (
                         <ArrowUp color="white" />
                     ) : (
-                        <ArrowDown color='white' />
+                        <ArrowDown color="white" />
                     )}
                 </div>
             </div>
@@ -26,4 +30,3 @@ export default function Collapse({ title, children }) {
         </div>
     )
 }
-

@@ -1,5 +1,9 @@
 import { useEffect, useState } from 'react'
 
+// Hook sur la méthode fetch permettant de gérér
+//  - Le chargement des données via l'état loading
+//  - Les données renvoyées via l'état data
+//  - Les erreurs lors de l'exécution vua les états error et exception
 export function useFetch(url) {
     const [data, setData] = useState({})
 
@@ -14,7 +18,8 @@ export function useFetch(url) {
 
         async function fetchData() {
             try {
-                // Uncomment to simulate a sleep of N seconds => loader being displayed
+                // La ligne cid-dessous permet de simuler une attente de N secondes
+                // Cela permet de tester le comportement de l'état loading
                 await new Promise((r) => setTimeout(r, 2 * 1000))
                 const response = await fetch(url)
                 const receivedData = await response.json()

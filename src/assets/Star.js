@@ -1,3 +1,6 @@
+// Composant permettant d'afficher une étoile
+//  - Rose lorsqu'elle est active
+//  - Grise lorsuq'elle est inactive
 export default function Star({ active = false }) {
     const color = active ? '#FF6060' : '#E3E3E3'
 

@@ -8,6 +8,8 @@ import Error from './pages/Error.js'
 import About from './pages/About.js'
 import Location from './pages/Location.js'
 
+// Composant contenant les différentes routes de l'application
+// Les composants header et footer sont sur toutes les pages
 export default function AppRouter() {
     return (
         <Router>

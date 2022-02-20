@@ -1,6 +1,8 @@
 import './Error.css'
 
+// Composant permettant d'afficher un message d'erreur provenant d'une exception
 export default function Error({ exception }) {
+    // Formattage du message d'erreur à afficher
     function getMessage() {
         let message = ''
         if (exception) {

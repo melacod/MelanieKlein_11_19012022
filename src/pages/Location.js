@@ -12,13 +12,29 @@ import Gallery from '../components/Gallery'
 
 import './Location.css'
 
+// Composant page permettant d'afficher une location à partir de son identifiant
 export default function Location() {
+    // Récupération du parameter locationId de l'URL
+    // Ce paramètre correspondant à l'identifiant de la location à afficher
     const { locationId } = useParams()
-    const { loading, data, error, exception } = GetAllLocations()
 
+    // Objet location à afficher (l'identifiant de cette location est égale à locationId)
     const [location, setLocation] = useState({})
+
+    // Navigation pour aller à la page d'erreur si on ne trouve pas de location
+    // avec un identifiant égale à locationId
     const navigate = useNavigate()
 
+    // Récupération de toutes les locations: asynchrone
+    // Loading indique que le chargement est cours
+    // Une fois le chargement terminé, data contient toutes les locations
+    // Error indique que le chargement des locations a échoué
+    // Exception contient les informations en cas d'erreur
+    const { loading, data, error, exception } = GetAllLocations()
+
+    // Effet lorsque data (toutes les locations) est modifié
+    // Lorsque toutes les locations sont chargées, on met à jour la location à afficher en parcourant
+    // le tableau de toutes les locations et en filtrant sur l'identifiant de la location à afficher (locationId)
     useEffect(() => {
         if (data && Array.isArray(data)) {
             setLocation(data.find((l) => l.id === locationId))
@@ -27,6 +43,13 @@ export default function Location() {
 
     return (
         <div>
+            {/* 
+                Si erreur : affichage du composant Error 
+                Sinon Si chargement en cours : affichage du composant Loader
+                Sinon si aucune location a un identifiant égale à locationId : navigation vers la page error
+                        Cette URL n'existe pas : par conséquent on tombe sur la page d'erreur 404
+                Sinon affichage de la location
+            */}
             {error ? (
                 <Error exception={exception} />
             ) : loading ? (

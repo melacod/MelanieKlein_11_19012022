@@ -4,6 +4,7 @@ import Banner from '../components/Banner.js'
 
 import './About.css'
 
+// Composant page A propos permmetant d'afficher les principes du site
 export default function About() {
     return (
         <div className="about">
