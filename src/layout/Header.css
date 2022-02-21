@@ -12,7 +12,7 @@ header .logo {
     display: block;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     header {
         margin: 20px;
     }

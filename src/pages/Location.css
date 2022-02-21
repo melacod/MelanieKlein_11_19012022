@@ -89,7 +89,7 @@
     height: 250px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .location .info {
         margin-top: 15px;
         flex-wrap: wrap;

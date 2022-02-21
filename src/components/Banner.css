@@ -7,7 +7,7 @@ img.banner {
     filter: contrast(50%);
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     img.banner {
         margin-bottom: 20px;
         border-radius: 10px;

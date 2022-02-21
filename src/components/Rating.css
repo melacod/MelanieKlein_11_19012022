@@ -8,7 +8,7 @@
     height: 30px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 425px) {
     .rating .star {
         margin-left: 5px;
         width: 15px;
