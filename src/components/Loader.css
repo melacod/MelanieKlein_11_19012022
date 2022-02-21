@@ -3,7 +3,7 @@
     position: relative;
     left: 50%;
     transform: translateX(-50%);
-    width: 80px;
+    width: 80px !important;
     height: 80px;
 }
 
