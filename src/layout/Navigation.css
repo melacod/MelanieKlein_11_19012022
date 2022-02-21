@@ -27,3 +27,12 @@ nav ul li a.active {
         text-transform: uppercase;
     }
 }
+
+@media (max-width: 320px) {
+    nav ul {
+        flex-wrap: wrap;
+    }
+    nav ul li {
+        margin-bottom: 5px;
+    }
+}
