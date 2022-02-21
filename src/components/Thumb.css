@@ -29,6 +29,15 @@
     text-align: left;
 }
 
+@media (max-width: 768px) {
+    .thumb {
+        width: 100%;
+        height: 255px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+}
+
 @media (max-width: 425px) {
     .thumb {
         width: 100%;
